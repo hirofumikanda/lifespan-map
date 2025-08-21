@@ -6,14 +6,14 @@
       "url": "pmtiles:///lifespan-map/data/lifespan.pmtiles",
       "minzoom": 4,
       "maxzoom": 8,
-      "attribution": "<a href='https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2025.html' target='_blank'>国土数値情報（行政区域）</a>"
+      "attribution": "<a href='https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2025.html' target='_blank'>国土数値情報（行政区域）</a> | <a href='https://www.e-stat.go.jp/stat-search/files?page=1&stat_infid=000032268110' target='_blank'>都道府県別生命表</a>"
     },
     "sunshine_hours": {
       "type": "vector",
       "url": "pmtiles:///lifespan-map/data/sunshine_hours.pmtiles",
       "minzoom": 4,
       "maxzoom": 8,
-      "attribution": "<a href='https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2025.html' target='_blank'>国土数値情報（行政区域）</a>"
+      "attribution": "<a href='https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2025.html' target='_blank'>国土数値情報（行政区域）</a> | <a href='https://www.e-stat.go.jp/dbview?sid=0000010102' target='_blank'>社会・人口統計体系 都道府県データ 基礎データ </a>"
     }
   },
   "glyphs": "font/{fontstack}/{range}.pbf",
