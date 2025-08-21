@@ -4,7 +4,6 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import { Protocol } from "pmtiles";
 import { setupPopupHandler } from "../utils/popup";
 import { setupPointerHandler } from "../utils/pointer";
-import { onMapLoad } from "../utils/onMapLoad";
 
 const LAYERS = [
   { id: "sunshine_hours_2020", label: "日照時間(2020)" },
@@ -62,7 +61,6 @@ const MapView = () => {
     map.addControl(new maplibregl.NavigationControl(), "top-right");
 
     map.on("load", () => {
-      onMapLoad(map);
       LAYERS.forEach((layer) => {
         if (map.getLayer(layer.id)) {
           map.setLayoutProperty(
