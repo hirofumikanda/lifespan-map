@@ -36,5 +36,7 @@
 - [TypeScript](https://www.typescriptlang.org/)
 
 ## データ・ライセンス
-- 地図データ出典：[国土数値情報（行政区域）](https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2025.html)
+- 都道府県行政区域：[国土数値情報（行政区域）](https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2025.html)
+- 日照時間：[e-Stat（社会・人口統計体系 都道府県データ 基礎データ）](https://www.e-stat.go.jp/dbview?sid=0000010102)
+- 平均寿命：[e-Stat（生命表 / 都道府県別生命表 令和２年都道府県別生命表）](https://www.e-stat.go.jp/stat-search/files?page=1&stat_infid=000032268110)
 - 本リポジトリはMITライセンスです。
