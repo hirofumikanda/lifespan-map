@@ -23,6 +23,8 @@ export const LayerSwitcher: React.FC<LayerSwitcherProps> = ({
     setIsLayerPanelOpen(false);
   };
 
+  const activeLayerLabel = layers.find(layer => layer.id === activeLayer)?.label || "";
+
   return (
     <>
       {/* レイヤ切り替えボタン */}
@@ -55,13 +57,34 @@ export const LayerSwitcher: React.FC<LayerSwitcherProps> = ({
         </span>
       </button>
 
+      {/* 現在のレイヤー表示 */}
+      <div
+        style={{
+          position: "absolute",
+          left: 10,
+          top: 55,
+          zIndex: 2,
+          background: "rgba(255,255,255,0.9)",
+          border: "1px solid #d1d5db",
+          borderRadius: "4px",
+          padding: "6px 10px",
+          fontSize: "12px",
+          color: "#374151",
+          boxShadow: "0 1px 3px rgba(0,0,0,0.1)",
+          maxWidth: "calc(100vw - 40px)",
+          wordBreak: "break-word"
+        }}
+      >
+        現在: {activeLayerLabel}
+      </div>
+
       {/* レイヤ切り替えパネル */}
       {isLayerPanelOpen && (
         <div
           style={{
             position: "absolute",
             left: 10,
-            top: 60,
+            top: 85,
             zIndex: 2,
             background: "rgba(219,234,254,0.97)",
             padding: "12px 16px",
