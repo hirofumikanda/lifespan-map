@@ -1,0 +1,347 @@
+{
+  "version": 8,
+  "sources": {
+    "lifespan": {
+      "type": "vector",
+      "url": "pmtiles:///lifespan-map/data/lifespan.pmtiles",
+      "minzoom": 4,
+      "maxzoom": 8,
+      "attribution": "<a href='https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2025.html' target='_blank'>国土数値情報（行政区域）</a>"
+    },
+    "sunshine_hours": {
+      "type": "vector",
+      "url": "pmtiles:///lifespan-map/data/sunshine_hours.pmtiles",
+      "minzoom": 4,
+      "maxzoom": 8,
+      "attribution": "<a href='https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2025.html' target='_blank'>国土数値情報（行政区域）</a>"
+    }
+  },
+  "glyphs": "font/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "lifespan_2000_male",
+      "type": "fill",
+      "source": "lifespan",
+      "source-layer": "lifespan",
+      "paint": {
+        "fill-color": [
+          "interpolate",
+          ["linear"],
+          ["get", "lifespan_2000_male"],
+          75.67,
+          "#fff",
+          78.9,
+          "#00f"
+        ],
+        "fill-outline-color": "#bcb9b6"
+      },
+      "minzoom": 4
+    },
+    {
+      "id": "lifespan_2005_male",
+      "type": "fill",
+      "source": "lifespan",
+      "source-layer": "lifespan",
+      "paint": {
+        "fill-color": [
+          "interpolate",
+          ["linear"],
+          ["get", "lifespan_2005_male"],
+          76.27,
+          "#fff",
+          79.84,
+          "#00f"
+        ],
+        "fill-outline-color": "#bcb9b6"
+      },
+      "minzoom": 4
+    },
+    {
+      "id": "lifespan_2010_male",
+      "type": "fill",
+      "source": "lifespan",
+      "source-layer": "lifespan",
+      "paint": {
+        "fill-color": [
+          "interpolate",
+          ["linear"],
+          ["get", "lifespan_2010_male"],
+          77.28,
+          "#fff",
+          80.88,
+          "#00f"
+        ],
+        "fill-outline-color": "#bcb9b6"
+      },
+      "minzoom": 4
+    },
+    {
+      "id": "lifespan_2015_male",
+      "type": "fill",
+      "source": "lifespan",
+      "source-layer": "lifespan",
+      "paint": {
+        "fill-color": [
+          "interpolate",
+          ["linear"],
+          ["get", "lifespan_2015_male"],
+          78.67,
+          "#fff",
+          81.78,
+          "#00f"
+        ],
+        "fill-outline-color": "#bcb9b6"
+      },
+      "minzoom": 4
+    },
+    {
+      "id": "lifespan_2020_male",
+      "type": "fill",
+      "source": "lifespan",
+      "source-layer": "lifespan",
+      "paint": {
+        "fill-color": [
+          "interpolate",
+          ["linear"],
+          ["get", "lifespan_2020_male"],
+          79.27,
+          "#fff",
+          82.73,
+          "#00f"
+        ],
+        "fill-outline-color": "#bcb9b6"
+      },
+      "minzoom": 4
+    },
+    {
+      "id": "lifespan_2000_female",
+      "type": "fill",
+      "source": "lifespan",
+      "source-layer": "lifespan",
+      "paint": {
+        "fill-color": [
+          "interpolate",
+          ["linear"],
+          ["get", "lifespan_2000_female"],
+          83.69,
+          "#fff",
+          86.01,
+          "#00f"
+        ],
+        "fill-outline-color": "#bcb9b6"
+      },
+      "minzoom": 4
+    },
+    {
+      "id": "lifespan_2005_female",
+      "type": "fill",
+      "source": "lifespan",
+      "source-layer": "lifespan",
+      "paint": {
+        "fill-color": [
+          "interpolate",
+          ["linear"],
+          ["get", "lifespan_2005_female"],
+          84.8,
+          "#fff",
+          86.88,
+          "#00f"
+        ],
+        "fill-outline-color": "#bcb9b6"
+      },
+      "minzoom": 4
+    },
+    {
+      "id": "lifespan_2010_female",
+      "type": "fill",
+      "source": "lifespan",
+      "source-layer": "lifespan",
+      "paint": {
+        "fill-color": [
+          "interpolate",
+          ["linear"],
+          ["get", "lifespan_2010_female"],
+          85.34,
+          "#fff",
+          87.18,
+          "#00f"
+        ],
+        "fill-outline-color": "#bcb9b6"
+      },
+      "minzoom": 4
+    },
+    {
+      "id": "lifespan_2015_female",
+      "type": "fill",
+      "source": "lifespan",
+      "source-layer": "lifespan",
+      "paint": {
+        "fill-color": [
+          "interpolate",
+          ["linear"],
+          ["get", "lifespan_2015_female"],
+          85.93,
+          "#fff",
+          87.67,
+          "#00f"
+        ],
+        "fill-outline-color": "#bcb9b6"
+      },
+      "minzoom": 4
+    },
+    {
+      "id": "lifespan_2020_female",
+      "type": "fill",
+      "source": "lifespan",
+      "source-layer": "lifespan",
+      "paint": {
+        "fill-color": [
+          "interpolate",
+          ["linear"],
+          ["get", "lifespan_2020_female"],
+          86.33,
+          "#fff",
+          88.29,
+          "#00f"
+        ],
+        "fill-outline-color": "#bcb9b6"
+      },
+      "minzoom": 4
+    },
+    {
+      "id": "sunshine_hours_2000",
+      "type": "fill",
+      "source": "sunshine_hours",
+      "source-layer": "sunshine_hours",
+      "paint": {
+        "fill-color": [
+          "interpolate",
+          ["linear"],
+          ["get", "sunshine_hours_2000"],
+          1431.3,
+          "#fee5d9",
+          1600,
+          "#fcae91",
+          1750,
+          "#fb6a4a",
+          1900,
+          "#de2d26",
+          2050,
+          "#a50f15",
+          2176.6,
+          "#67000d"
+        ],
+        "fill-outline-color": "#bcb9b6"
+      },
+      "minzoom": 4
+    },
+    {
+      "id": "sunshine_hours_2005",
+      "type": "fill",
+      "source": "sunshine_hours",
+      "source-layer": "sunshine_hours",
+      "paint": {
+        "fill-color": [
+          "interpolate",
+          ["linear"],
+          ["get", "sunshine_hours_2005"],
+          1469.4,
+          "#fee5d9",
+          1650,
+          "#fcae91",
+          1850,
+          "#fb6a4a",
+          2050,
+          "#de2d26",
+          2250,
+          "#a50f15",
+          2461.5,
+          "#67000d"
+        ],
+        "fill-outline-color": "#bcb9b6"
+      },
+      "minzoom": 4
+    },
+    {
+      "id": "sunshine_hours_2010",
+      "type": "fill",
+      "source": "sunshine_hours",
+      "source-layer": "sunshine_hours",
+      "paint": {
+        "fill-color": [
+          "interpolate",
+          ["linear"],
+          ["get", "sunshine_hours_2010"],
+          1622.4,
+          "#fee5d9",
+          1750,
+          "#fcae91",
+          1850,
+          "#fb6a4a",
+          1950,
+          "#de2d26",
+          2050,
+          "#a50f15",
+          2187.8,
+          "#67000d"
+        ],
+        "fill-outline-color": "#bcb9b6"
+      },
+      "minzoom": 4
+    },
+    {
+      "id": "sunshine_hours_2015",
+      "type": "fill",
+      "source": "sunshine_hours",
+      "source-layer": "sunshine_hours",
+      "paint": {
+        "fill-color": [
+          "interpolate",
+          ["linear"],
+          ["get", "sunshine_hours_2015"],
+          1665.6,
+          "#fee5d9",
+          1800,
+          "#fcae91",
+          1900,
+          "#fb6a4a",
+          2000,
+          "#de2d26",
+          2100,
+          "#a50f15",
+          2216.1,
+          "#67000d"
+        ],
+        "fill-outline-color": "#bcb9b6"
+      },
+      "minzoom": 4
+    },
+    {
+      "id": "sunshine_hours_2020",
+      "type": "fill",
+      "source": "sunshine_hours",
+      "source-layer": "sunshine_hours",
+      "paint": {
+        "fill-color": [
+          "interpolate",
+          ["linear"],
+          ["get", "sunshine_hours_2020"],
+          1588.8,
+          "#fee5d9",
+          1700,
+          "#fcae91",
+          1850,
+          "#fb6a4a",
+          2000,
+          "#de2d26",
+          2150,
+          "#a50f15",
+          2319.6,
+          "#67000d"
+        ],
+        "fill-outline-color": "#bcb9b6"
+      },
+      "minzoom": 4
+    }
+  ]
+}

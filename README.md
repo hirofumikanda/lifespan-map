@@ -1,0 +1,40 @@
+# 平均寿命・日照時間マップ
+
+このプロジェクトは、日本全国の平均寿命や日照時間などの地理データを、MapLibre GL JS + React を用いて可視化するWebアプリです。
+
+## 主な機能
+- PMTiles形式の地図タイルを利用し、都道府県単位の平均寿命・日照時間等を地図上に表示
+- 複数レイヤー（例：平均寿命、日照時間）の切り替え
+- 地図クリックで詳細ポップアップ表示
+
+## デモ
+- [GitHub Pagesで公開中](https://hirofumikanda.github.io/lifespan-map/)
+
+## セットアップ手順
+1. 依存ライブラリのインストール
+   ```bash
+   npm install
+   ```
+2. 開発サーバーの起動
+   ```bash
+   npm run dev
+   ```
+
+## ディレクトリ構成
+- `src/`：アプリ本体
+  - `components/MapView.tsx`：地図表示・初期化
+  - `components/LegendItem.tsx`：凡例UI
+  - `utils/`：地図操作・ポップアップ等
+- `public/styles/style.json`：MapLibreスタイル定義
+- `public/data/`：PMTiles地図データ
+
+## 技術スタック
+- [MapLibre GL JS](https://maplibre.org/)
+- [pmtiles](https://github.com/protomaps/PMTiles)
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+
+## データ・ライセンス
+- 地図データ出典：[国土数値情報（行政区域）](https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2025.html)
+- 本リポジトリはMITライセンスです。
